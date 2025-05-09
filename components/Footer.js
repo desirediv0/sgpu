@@ -89,7 +89,7 @@ const Footer = () => {
                   href="/about"
                   className="text-gray-400 hover:text-[#FF5C00] transition-colors"
                 >
-                  About LPU
+                  About SGPU
                 </Link>
               </li>
               <li>

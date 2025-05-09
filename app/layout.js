@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "LPU - Transforming Education, Transforming India",
+  title: "SGPU - Transforming Education, Transforming India",
   description:
-    "Lovely Professional University - One of India's Largest Universities",
+    "Sikkim Global Technical University - One of India's Largest Universities",
 };
 
 export default function RootLayout({ children }) {
