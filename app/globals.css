@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lpu-orange: #ff5c00;
+  --lpu-black: #000000;
+  --lpu-white: #ffffff;
+  --lpu-gray: #f5f5f5;
+  --lpu-dark-gray: #333333;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium text-gray-900;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--lpu-orange)] text-white px-6 py-2 rounded-md font-medium hover:bg-orange-700 transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-[var(--lpu-black)] text-white px-6 py-2 rounded-md font-medium hover:bg-gray-800 transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply relative font-medium text-gray-800 hover:text-[var(--lpu-orange)] transition-colors duration-300;
+  }
+
+  .nav-link:after {
+    @apply content-[''] absolute left-0 -bottom-1 h-[2px] w-0 bg-[var(--lpu-orange)] transition-all duration-300;
+  }
+
+  .nav-link:hover:after {
+    @apply w-full;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-semibold mb-8 relative inline-block;
+  }
+
+  .section-heading:after {
+    @apply content-[''] absolute left-0 -bottom-2 h-1 w-24 bg-[var(--lpu-orange)];
+  }
+}
