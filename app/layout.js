@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "SGPU - Transforming Education, Transforming India",
+  title: "SGTU - Transforming Education, Transforming India",
   description:
     "Sikkim Global Technical University - One of India's Largest Universities",
 };

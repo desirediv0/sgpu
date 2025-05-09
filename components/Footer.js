@@ -89,7 +89,7 @@ const Footer = () => {
                   href="/about"
                   className="text-gray-400 hover:text-[#FF5C00] transition-colors"
                 >
-                  About SGPU
+                  About SGTU
                 </Link>
               </li>
               <li>
@@ -222,7 +222,7 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail className="text-[#FF5C00] mr-3 h-5 w-5 flex-shrink-0" />
-                <span className="text-gray-400">info@sgtu.ac.in</span>
+                <span className="text-gray-400">info@SGTU.ac.in</span>
               </li>
             </ul>
             <div className="mt-6">
